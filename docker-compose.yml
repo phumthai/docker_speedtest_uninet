@@ -1,0 +1,15 @@
+version: '3'
+services:
+  multiserver:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: multiserver
+    volumes:
+      - . :/var/www/html
+    ports:
+      - "8000:80"
+
+
+
+
